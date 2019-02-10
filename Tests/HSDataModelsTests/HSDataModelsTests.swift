@@ -3,7 +3,8 @@ import XCTest
 
 final class HSDataModelsTests: XCTestCase {
   func testWeather() throws {
-    let weather = Weather(temperature: Measurement<UnitTemperature>(value: 21.5, unit: .celsius),
+    let weather = Weather(date: Date(),
+                          temperature: Measurement<UnitTemperature>(value: 21.5, unit: .celsius),
                           humidity: 10.1)
     let encoder = JSONEncoder()
 
