@@ -1,5 +1,5 @@
 import XCTest
-@testable import HSDataModels
+import HSDataModels
 
 final class HSDataModelsTests: XCTestCase {
   func testWeather() throws {
